@@ -10,7 +10,14 @@ class Customer:
         self.pets = []
 
 
-    # Remember to ALWAYS pass in "self" - even if no other parms!!!
+    # Remember to ALWAYS pass in "self" to a method - even if no other parms!!!
+    # Remember to ALWAYS pass in "self" to a method - even if no other parms!!!
+    # Remember to ALWAYS pass in "self" to a method - even if no other parms!!!
+
+
     def pet_count(self):
         return len(self.pets)
 
+
+    def add_pet(self, pet):
+        self.pets.append(pet)
