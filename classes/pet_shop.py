@@ -43,12 +43,9 @@ class PetShop:
 
 
     def sell_pet_to_customer(self, pet_name, customer):
-        increase_pets_sold()
+        customer.add_pet(pet_name)
+        pet_sold = self.find_pet_by_name(pet_name)
+        self.remove_pet(pet_sold)
+        self.increase_pets_sold()
+        self.increase_total_cash(pet_sold.price)
         
-
-    customer = Customer("Jack Jarvis", 1000)
-        self.pet_shop.sell_pet_to_customer("Sir Percy", customer)
-        self.assertEqual(1, customer.pet_count())
-        self.assertEqual(1, self.pet_shop.stock_count())
-        self.assertEqual(1, self.pet_shop.pets_sold)
-        self.assertEqual(1500, self.pet_shop.total_cash)
