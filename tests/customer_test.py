@@ -14,7 +14,7 @@ class TestCustomer(unittest.TestCase):
     def test_customer_has_cash(self):
         self.assertEqual(1000, self.customer.cash)
 
-    @unittest.skip("delete this line to run the test")
+    #@unittest.skip("delete this line to run the test")
     def test_pets_start_at_0(self):
         self.assertEqual(0, self.customer.pet_count())
 
