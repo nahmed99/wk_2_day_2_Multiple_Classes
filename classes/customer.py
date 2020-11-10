@@ -19,5 +19,17 @@ class Customer:
         return len(self.pets)
 
 
-    def add_pet(self, pet):
-        self.pets.append(pet)
+    def add_pet(self, new_pet):
+        self.pets.append(new_pet)
+
+
+    def get_total_value_of_pets(self):
+        total_value = 0
+
+        for pet in self.pets:
+            # Access the price property of the pet object
+            total_value += pet.price
+
+        return total_value
+
+    
