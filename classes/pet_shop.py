@@ -9,6 +9,7 @@ class PetShop:
         self.pets_sold = 0
 
 
+    # for CLASSES
     #REMEMBER to add "self" to parm list, even if no other parms exist!!!
     #REMEMBER to add "self" to parm list, even if no other parms exist!!!
     #REMEMBER to add "self" to parm list, even if no other parms exist!!!
